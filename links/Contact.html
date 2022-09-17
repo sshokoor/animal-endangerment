@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>Endangered</header>
+		<div class="menu">
+		<ul>
+			<li><a href="../index.html">About</a></li>
+				<div class="sub-menu">
+				<ul>
+					<li><a href="./AboutHistory.html">History</a></li>
+					<li><a href="./AboutEndangered.html">Endangered Species</a></li>
+				</ul>
+				</div>
+		</ul>
+		<ul>
+			<li><a href="#role">Humans Role</a></li>
+				<div class="sub-menu">
+				<ul>
+					<li><a href="./HumanOverview.html">Overview</a></li>
+				</ul>
+				</div>
+		</ul>
+		<ul>
+			<li><a href="#global">Global Warming</a></li>
+				<div class="sub-menu">
+				<ul>
+					<li><a href="https://cartovista.com/maps/endangered-species-mystery-map/" target="_blank">Countries</a></li>
+				</ul>
+				</div>
+		</ul>
+		<ul>
+			<li><a href="#organizations">Organizations</a></li>
+				<div class="sub-menu">
+				<ul>
+					<li><a href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2007OQ18299A01179RX&_ga=2.4511162.887348405.1587711724-1909609448.1587711724" target="_blank">Donations</a></li>
+				</ul>
+				</div>
+		</ul>
+		<ul>
+			<li><a href="#news">News</a></li>
+				<div class="sub-menu">
+				<ul>
+					<li><a href="./NewsArticles.html">Articles</a></li>
+				</ul>
+				</div>
+		</ul>
+		<ul>
+			<li><a href="./Contact.html">Contact</a></li>
+		</ul>
+		</div>
+		<div class="contactme">
+		<h1>Contact Me</h1>
+		<h3>Feel free to contact me with any questions or if you want more information</h3>
+		<div class="form">
+		<form id="myForm">
+			<table align="center" cellpadding="15">
+				<tr>
+					<td id="name">*Name: </td>
+					<td><input type="text" requiredrequired pattern="^([A-Za-z]+){1,}$" size="70"></td>
+				</tr>
+				<tr>
+					<td id="email">*Email: </td>
+					<td><input type="email" title="Must be a valid email" size="70"></td>
+				</tr>
+				<tr>
+					<td>Birthdate: </td>
+					<td><input type="date" size="70"></input></td>
+				</tr>
+				<tr>
+					<td id="about">*About: </td>
+					<td><textarea cols="70" rows="7"></textarea></td>
+				</tr>
+			</table>
+			<input type="button" onclick="myFunction()" value="Submit">
+		</form>
+		</div>
+		</div>
+	</body>
+		
+	<script>
+		function myFunction() {
+			document.getElementById('myForm').submit();
+			alert('Your form has been submitted');
+		}
+		
+		function requiredField() {
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var about = document.getElementById('about').value;
+			var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+			if (name=='' || email=='' || about==''){
+				alert('Please fill out all required fields');
+				return false;
+			}
+			else if (!(email).match(emailReg.value)){
+				alert('Invalid email');
+			}
+			else {
+				return true;
+			}
+		}
+	</script>
+		
+	<footer>Copyright &copy; 2020
+	<img src="../img/logo2.png"></img></footer>
+</html>
