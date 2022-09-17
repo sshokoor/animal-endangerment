@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left:0;
+	width: 600px;
+	font-size: 35px;
+}
+
+body {
+	background-color: #DDD;
+	padding-bottom: 58px;
+	position: relative;
+	min-height: 100vh;
+	background-image: url(websitepolar.jpg);
+	background-size: cover;
+	background-position: center;
+	height:100vh;
+}
+
+.menu {
+	float: left;
+	text-align: center;
+	/*border-bottom: 1px solid #BBBBBB;
+	padding: 10px 0px;
+	padding-right: 20px;
+	margin-right: 20px;*/
+}
+
+.menu ul {
+	display: inline-flex;
+	list-style: none;
+	padding: -15px -10px;
+	border: 1px solid transparent;
+
+}
+
+.menu ul li {
+	width: 140px;
+	margin: 15px;
+	/*padding: 15px;*/
+}
+
+.menu ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #031D44;
+	font-weight: bold;
+  	font-size: 14px;
+  	opacity: 0.75;	
+}
+
+.sub-menu {
+	display: none;
+}
+
+.sub-menu ul li a {
+	width: 200px;
+}
+
+/*.menu:hover {
+	opacity: 1;
+}*/
+
+.menu ul:hover .sub-menu {
+	display: block;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: -15px;
+	/*opacity: 0.75;*/
+}
+
+.menu:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+}
+
+.menu::before {
+  	transition: 300ms;
+  	height: 5px;
+  	content: "";
+  	position: absolute;
+  	background-color: #031D44;
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.button {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.btn {
+	border: 1px solid #C1EDCC;
+	padding: 10px 30px;
+	color: #000;
+	text-decoration: none;
+}
+
+/*AboutHistory.html*/
+.history1 {
+	text-align: left;
+	margin-top: 90px;
+	margin-right: 35px;
+	margin-left: 35px;
+	border: 1px dotted transparent;
+	background-color: aliceblue;
+	padding: 10px;
+	font-size: 18px;
+	display: inline-block;
+
+}
+
+/*HumanOverview.html*/
+.humanover {
+	text-align: left;
+	margin-top: 90px;
+	margin-right: 35px;
+	margin-left: 35px;
+	border: 1px dotted transparent;
+	background-color: aliceblue;
+	padding: 10px;
+	font-size: 18px;
+	display: inline-block;
+}
+
+/*Feed for NewsArticles.html*/
+.feed {
+	margin: 50px;
+	padding: 20px;
+}
+
+/*Form for Contact.html*/
+.contactme {
+	margin-top: 115px;
+	padding-bottom: 10px;
+	text-align: center;
+	clear: both;
+	border: 1px dotted transparent;
+	background-color: aliceblue;
+	margin-right: 35px;
+	margin-left: 35px;
+}
+
+.form {
+	margin-left: 400px;
+	font-size: 20px;
+	padding: 10px;
+	border: 1px dotted transparent;
+	background-color: aliceblue;
+	
+}
+
+.form p {
+	text-align: center;
+}
+
+footer {
+	padding: 3px;
+	/*background-color: #B0C0BC;*/
+	bottom: 0;
+	width: 100%;
+	position: fixed;
+	clear: both;
+	margin: auto;
+	
+}
+
+footer img {
+	float: right;
+	height: 100px;
+}
